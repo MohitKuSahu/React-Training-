@@ -1,0 +1,154 @@
+{
+  "shipments": [
+    {
+      "id": "1",
+      "origin": "Kansas",
+      "destination": "Alaska",
+      "status": "In transit",
+      "trackingInfo": "ETA: 04/07/2024",
+      "date": "2024-04-07"
+    },
+    {
+      "id": "2",
+      "origin": "Chicago",
+      "destination": "New York",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 04/15/2024"
+    },
+    {
+      "id": "4",
+      "origin": "New York",
+      "destination": "Alaska",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 05/05/2024"
+    },
+    {
+      "id": "5",
+      "origin": "Boston",
+      "destination": "Washington, D.C.",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 04/18/2024",
+      "date": "2024-04-18"
+    },
+    {
+      "id": "9",
+      "origin": "Philadelphia",
+      "destination": "Orlando",
+      "status": "In transit",
+      "trackingInfo": "ETA: 04/21/2024",
+      "date": "2024-04-21"
+    },
+    {
+      "id": "10",
+      "origin": "Minneapolis",
+      "destination": "Detroit",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 04/17/2024",
+      "date": "2024-04-17"
+    },
+    {
+      "id": "9772",
+      "origin": "Boston",
+      "destination": "New York",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 04/21/2024",
+      "date": "2024-04-21"
+    },
+    {
+      "id": "49ba",
+      "origin": "California",
+      "destination": "Chicago",
+      "status": "In transit",
+      "trackingInfo": "ETA: 04/21/2024",
+      "date": "2024-04-21"
+    },
+    {
+      "id": "f2ce",
+      "origin": "Miami",
+      "destination": "New York",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 04/14/2024",
+      "date": "2024-04-14"
+    },
+    {
+      "id": "b85e",
+      "origin": "New York",
+      "destination": "Miami",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 04/07/2024",
+      "date": "2024-04-07"
+    },
+    {
+      "id": "c451",
+      "origin": "Kansas",
+      "destination": "New York",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 04/21/2024",
+      "date": "2024-04-21"
+    },
+    {
+      "id": "9476",
+      "origin": "California",
+      "destination": "Chicago",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 04/28/2024",
+      "date": "2024-04-28"
+    },
+    {
+      "id": "c2aa",
+      "origin": "Boston",
+      "destination": "New York",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 04/28/2024",
+      "date": "2024-04-28"
+    },
+    {
+      "id": "2f38",
+      "origin": "Boston",
+      "destination": "New York",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 05/05/2024",
+      "date": "2024-05-05"
+    },
+    {
+      "id": "9bde",
+      "origin": "Boston",
+      "destination": "Hawaii",
+      "status": "Delayed",
+      "trackingInfo": "Delayed - new ETA: 05/12/2024"
+    },
+    {
+      "id": "2dd6",
+      "origin": "New York",
+      "destination": "Kansas",
+      "status": "Delivered",
+      "trackingInfo": "Delivered on 04/07/2024"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "John",
+      "email": "john@example.com",
+      "password": "password1"
+    },
+    {
+      "id": "2",
+      "name": "Alice",
+      "email": "alice@example.com",
+      "password": "password2"
+    },
+    {
+      "id": "e9af",
+      "name": "Abhay",
+      "email": "Abhay@gmail.com",
+      "password": "Abhay"
+    },
+    {
+      "id": "e7bc",
+      "name": "Joe",
+      "email": "joe@example.com",
+      "password": "joe12345"
+    }
+  ]
+}

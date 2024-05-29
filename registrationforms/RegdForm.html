@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form in HTML CSS</title>
+    <link rel="stylesheet" href="RegdFormPage.css" />
+</head>
+
+<body>
+    <section class="container">
+        <header>Registration Form</header>
+        <form class="form" id="registration-form">
+            <h2>Profile</h2>
+            <div class="row">
+                <div class="input-box">
+                    <label class="mandatory">First Name</label>
+                    <input type="text" placeholder="Enter first name" name="FirstName" class="mandatoryInput" />
+                    <span class="error-message" id="firstNameError"></span>
+                </div>
+                <div class="input-box">
+                    <label class="mandatory">Last Name</label>
+                    <input type="text" placeholder="Enter last name" name="LastName" class="mandatoryInput" />
+                    <span class="error-message" id="lastNameError"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-box">
+                    <label class="mandatory">Phone Number</label>
+                    <input type="tel" placeholder="Enter phone number" name="PhoneNumber" id="phoneInput"
+                        class="mandatoryInput" />
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+                <div class="input-box">
+                    <label class="mandatory">Date of Birth</label>
+                    <input type="date" placeholder="Enter birth date" name="BirthDate" class="mandatoryInput" />
+                    <span class="error-message" id="birthDateError"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-box">
+                    <label class="mandatory">Email Address</label>
+                    <input type="email" placeholder="Enter email address" name="EmailAddress" id="emailInput"
+                        class="mandatoryInput" />
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="input-box">
+                    <label class="mandatory">Password</label>
+                    <input type="password" placeholder="Enter Password" name="Password" id="passwordInput"
+                        class="mandatoryInput" />
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+            </div>
+
+            <div class="gender-box">
+                <h3 class="mandatory">Gender</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type="radio" id="check-male" name="Gender" value="Male" checked/>
+                        <label for="check-male">Male</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-female" name="Gender" value="Female"/>
+                        <label for="check-female">Female</label>
+                    </div>
+                    <div class="gender">
+                        <input type="radio" id="check-other" name="Gender" value="Others"/>
+                        <label for="check-other">Others</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-box address">
+                <h2>Address</h2>
+                <div class="row">
+                    <div class="input-box">
+                        <label class="mandatory" for="street-address">Street Address Line 1</label>
+                        <input type="text" id="street-address" placeholder="Enter street address line 1"
+                            name="StreetAddress1" class="mandatoryInput" />
+                        <span class="error-message" id="streetAddressError"></span>
+                    </div>
+                    <div class="input-box">
+                        <label for="street-address-2">Street Address Line 2</label>
+                        <input type="text" id="street-address-2" placeholder="Enter street address line 2"
+                            name="StreetAddress2" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-box">
+                        <label class="mandatory" for="country">Country</label>
+                        <div class="select-box">
+                            <select id="country" name="Country">
+                                <option hidden value="">Select Country</option>
+                                <option value="America">America</option>
+                                <option value="Japan">Japan</option>
+                                <option value="India" selected>India</option>
+                                <option value="Nepal">Nepal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label class="mandatory" for="city">City</label>
+                        <input type="text" id="city" placeholder="Enter your city" name="City" class="mandatoryInput" />
+                        <span class="error-message" id="cityError"></span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-box">
+                        <label class="mandatory">Region:</label>
+                        <input type="text" placeholder="Enter your region" name="Region" class="mandatoryInput" />
+                        <span class="error-message" id="regionError"></span>
+                    </div>
+                    <div class="input-box">
+                        <label class="mandatory">Postal Code:</label>
+                        <input type="number" placeholder="Enter postal code" name="PostalCode" id="postalCodeInput"
+                            class="mandatoryInput" />
+                        <span class="error-message" id="postalCodeError"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hobbies-box">
+                <h3 class="mandatory">Hobbies</h3>
+                <div class="hobbies-option">
+                    <div class="hobby">
+                        <input type="checkbox" id="hobby-cooking" name="Hobbies" value="Cooking" />
+                        <label for="hobby-cooking">Cooking</label>
+                    </div>
+                    <div class="hobby">
+                        <input type="checkbox" id="hobby-travelling" name="Hobbies" value="Travelling" />
+                        <label for="hobby-travelling">Travelling</label>
+                    </div>
+                    <div class="hobby">
+                        <input type="checkbox" id="hobby-reading" name="Hobbies" value="Reading" />
+                        <label for="hobby-reading">Reading</label>
+                    </div>
+                    <div class="hobby">
+                        <input type="checkbox" id="hobby-other" name="Hobbies" value="Others" checked />
+                        <label for="hobby-other">Others</label>
+                    </div>
+                </div>
+            </div>
+
+            <input type="hidden" id="editIndex" name="editIndex" value="">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="display-user">
+        <center>
+            <h2>Student Lists</h2>
+        </center>
+        <table id="studentTable"></table>
+    </section>
+
+    <script src="RegdForm.js"></script>
+</body>
+
+</html>

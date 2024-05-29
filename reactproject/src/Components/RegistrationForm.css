@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main-container {
+    font-family: Arial, sans-serif; 
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    overflow: auto;
+    height: 100vh;
+}
+
+.container header,.display-user header {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif; 
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+    font-family: Verdana, Geneva, sans-serif; 
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    font-family: "Courier New", Courier, monospace; 
+}
+.select-box option{
+    font-family: "Courier New", Courier, monospace; 
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .row {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .choice-box {
+    margin-top: 20px;
+}
+
+.choice-box h3 {
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+    font-family: Verdana, Geneva, sans-serif; 
+}
+
+.form :where(.choice-option, .choice){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .choice {
+    column-gap: 5px;
+}
+
+.choice input {
+    accent-color: rgb(130, 106, 251);
+}
+
+.choice input,
+.choice label{
+    cursor: pointer;
+}
+
+.choice label {
+    color: #707070;
+}
+
+.address :where(input, .select-box) {
+    margin-top: 15px;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.form button {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: rgb(130, 106, 251);
+}
+
+.form button:hover {
+    background: rgb(88, 56, 250);
+}
+
+
+.display-user {
+    width: 80%;
+    margin: 20px auto; 
+    border-radius: 10px; 
+    padding: 5px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd; 
+    padding: 10px; 
+    text-align: center;
+}
+
+th {
+    background-color: #000; 
+    color: #fff; 
+    font-weight: bold; 
+}
+
+.button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+.error-message,.error-messages-update{
+    color: red;
+    font-family: Arial, sans-serif; 
+}
+.mandatory::after {
+    content: '*';
+    color: red;
+}
+
+
+/*Responsiveness*/
+@media screen and (max-width: 500px) {
+    .form .row {
+        flex-wrap: wrap;
+    }
+
+    .form :where(.gender-option, .gender),
+    .form :where(.hobbies-option, .hobby) {
+        row-gap: 15px;
+    }
+      
+    
+}
+
